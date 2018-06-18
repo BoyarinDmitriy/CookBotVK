@@ -1,8 +1,5 @@
 <?php
 
-define('VK_API_VERSION', '5.50');
-define('VK_API_ENDPOINT', 'https://api.vk.com/method/');
-
 function vkApi_messagesSend($peer_id, $message) {
     return _vkApi_call('messages.send', array(
         'peer_id' => $peer_id,

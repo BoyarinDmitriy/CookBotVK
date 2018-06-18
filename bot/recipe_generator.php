@@ -9,7 +9,6 @@ function get_recipe($query) {
     }
     $is_complete_coincidence = true;
     $counter = count($ingredients);
-
     while($counter > 0){
         $recipes = vkApi_wallSearch(GROUP_DOMAIN, $query);
         $recipes_count = $recipes['count'];
