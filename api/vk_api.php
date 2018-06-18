@@ -20,10 +20,11 @@ function vkApi_usersGet($user_id) {
     ));
 }
 
-function vkApi_wallGet($domain) {
-    return _vkApi_call('wall.get', array(
-        'owner_id' => $domain,
-        'access_token' => VK_API_ACCESS_TOKEN,
+function vkApi_wallSearch($domain, $query) {
+    return _vkApi_call('wall.search', array(
+        'domain' => $domain,
+        'query' => $query,
+        'access_token' => VK_API_SERVICE_TOKEN,
         'v' => VK_API_VERSION,
     ));
 }
@@ -31,13 +32,11 @@ function vkApi_wallGet($domain) {
 function _vkApi_call($method, $params = array()) {
     $query = http_build_query($params);
     $url = VK_API_ENDPOINT.$method.'?'.$query;
-    print($url);
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     $json = curl_exec($curl);
     curl_close($curl);
     $response = json_decode($json, true);
-    print_r($response);
     return $response['response'];
 }
 
