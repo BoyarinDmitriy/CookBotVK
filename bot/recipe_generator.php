@@ -22,16 +22,15 @@ function get_recipe($query) {
             }
             break;
         } else {
-            //$is_complete_coincidence = false;
+            $is_complete_coincidence = false;
             $query = '';
             unset($ingredients[rand(0, count($ingredients) - 1)]);
             foreach($ingredients as $ingredient){
-                $query = ' '.$query.$ingredient.' ';
+                $query = $query.$ingredient.' ';
             }
-            $query = str_replace('  ', ', ', trim($query));
+            $query = str_replace(' ', ', ', trim($query));
             $ingredients = explode(', ', $query);
         }
     } while(count($ingredients) > 0);
-
     return $recipe;
 }
