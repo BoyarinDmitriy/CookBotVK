@@ -8,7 +8,9 @@ function get_recipe($query) {
         $recipe = 'Ничего не удалось найти :(';
     }
     $is_complete_coincidence = true;
-    do {
+    $counter = count($ingredients);
+
+    while($counter > 0){
         $recipes = vkApi_wallSearch(GROUP_DOMAIN, $query);
         $recipes_count = $recipes['count'];
         if($recipes_count > 1) {
@@ -26,11 +28,12 @@ function get_recipe($query) {
             $query = '';
             unset($ingredients[rand(0, count($ingredients) - 1)]);
             foreach($ingredients as $ingredient){
-                $query = $query.$ingredient.' ';
+                $query = $query.$ingredient.'  ';
             }
-            $query = str_replace(' ', ', ', trim($query));
+            $query = str_replace('  ', ', ', trim($query));
             $ingredients = explode(', ', $query);
+            $counter--;
         }
-    } while(count($ingredients) > 0);
+    }
     return $recipe;
 }
