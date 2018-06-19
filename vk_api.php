@@ -1,5 +1,7 @@
 <?php
 
+require_once 'config.php';
+
 function vkApi_messagesSend($peer_id, $message) {
     return _vkApi_call('messages.send', array(
         'peer_id' => $peer_id,

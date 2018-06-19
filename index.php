@@ -1,5 +1,8 @@
 <?php
 
+require_once 'config.php';
+require_once 'bot.php';
+
 if (!isset($_REQUEST)) {
     exit;
 }

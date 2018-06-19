@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d413bb4c-4f53-4dd9-8210-a91100a46ae4" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/bot/bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/bot/bot.php" afterDir="false" />
 =======
+=======
+>>>>>>> parent of 2f7c96b... ok
       <change beforePath="$PROJECT_DIR$/api/vk_api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/vk_api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot/recipe_generator.php" beforeDir="false" afterPath="$PROJECT_DIR$/bot/recipe_generator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
@@ -45,8 +48,13 @@
         <entry file="file://$PROJECT_DIR$/api/vk_api.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="136">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+=======
+            <state relative-caret-position="-187">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> parent of 2f7c96b... ok
 =======
             <state relative-caret-position="-187">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -59,8 +67,13 @@
         <entry file="file://$PROJECT_DIR$/bot/bot.php">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="34">
               <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+=======
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+>>>>>>> parent of 2f7c96b... ok
 =======
             <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
@@ -197,8 +210,12 @@
       <updated>1529240124556</updated>
       <workItem from="1529240126369" duration="11907000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1529327069938" duration="18699000" />
       <workItem from="1529417689793" duration="797000" />
+=======
+      <workItem from="1529327069938" duration="18080000" />
+>>>>>>> parent of 2f7c96b... ok
 =======
       <workItem from="1529327069938" duration="18080000" />
 >>>>>>> parent of 2f7c96b... ok
@@ -207,7 +224,11 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="31403000" />
+=======
+    <option name="totallyTimeSpent" value="29987000" />
+>>>>>>> parent of 2f7c96b... ok
 =======
     <option name="totallyTimeSpent" value="29987000" />
 >>>>>>> parent of 2f7c96b... ok
@@ -227,7 +248,11 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" visible="true" weight="0.24551724" />
+=======
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49804688" visible="true" weight="0.24551724" />
+>>>>>>> parent of 2f7c96b... ok
 =======
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49804688" visible="true" weight="0.24551724" />
 >>>>>>> parent of 2f7c96b... ok
@@ -325,6 +350,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
@@ -343,14 +369,29 @@
 <<<<<<< HEAD
         <state relative-caret-position="68">
           <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+>>>>>>> parent of 2f7c96b... ok
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/vk_api.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
 =======
+=======
+>>>>>>> parent of 2f7c96b... ok
         <state relative-caret-position="-187">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
@@ -360,6 +401,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
+<<<<<<< HEAD
+>>>>>>> parent of 2f7c96b... ok
+=======
 >>>>>>> parent of 2f7c96b... ok
         </state>
       </provider>
@@ -367,8 +411,13 @@
     <entry file="file://$PROJECT_DIR$/bot/recipe_generator.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="34">
           <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+=======
+        <state relative-caret-position="142">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+>>>>>>> parent of 2f7c96b... ok
 =======
         <state relative-caret-position="142">
           <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />

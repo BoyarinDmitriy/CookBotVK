@@ -1,5 +1,8 @@
 <?php
 
+require_once 'vk_api.php';
+require_once 'config.php';
+
 function get_recipe($query) {
     $ingredients = explode(', ', $query);
     if(count($ingredients) > 10){
