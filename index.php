@@ -1,5 +1,10 @@
 <?php
 
+define('CALLBACK_API_EVENT_CONFIRMATION', 'confirmation');
+define('CALLBACK_API_EVENT_MESSAGE_NEW', 'message_new');
+define('CALLBACK_API_CONFIRMATION_TOKEN', '9f9cd76b');
+
+
 if (!isset($_REQUEST)) {
     exit;
 }
