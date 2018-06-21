@@ -20,7 +20,14 @@ function get_recipe($query) {
                 $recipes_count = 19;
             }
             if($is_complete_coincidence) {
-                $recipe = POST_ADDRESS.$recipes['items'][rand(0, $recipes_count - 1)]['id'];
+                $recipe = '';
+                if($recipes_count > 3){
+                    $recipes_count = 3;
+                }
+                for($i = 0; $i < $recipes_count; $i++) {
+                    $recipe = $recipe.POST_ADDRESS.$recipes['items'][$i]['id'].PHP_EOL;
+                }
+
             } else {
                 $recipe = $recipes['items'][rand(0, $recipes_count - 1)]['text'];
             }
