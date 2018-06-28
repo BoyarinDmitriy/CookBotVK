@@ -19,7 +19,7 @@ function bot_sendMessage($user_id, $message) {
     $keyboard = json_encode($keyboard,JSON_UNESCAPED_UNICODE);
 
     switch ($message) {
-        case 'Начать':
+        case 'Начать' || 'Помощь':
             $start_message = 'Привет!'.PHP_EOL.
                 'Так-с, давай найдем тебе рецепт'.PHP_EOL.
                 'Напиши в строчку через запятую ингредиенты (например: огурец, помидор, лук)';
