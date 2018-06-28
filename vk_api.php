@@ -2,10 +2,11 @@
 
 require_once 'config.php';
 
-function vkApi_messagesSend($peer_id, $message) {
+function vkApi_messagesSend($peer_id, $message, $keyboard=null) {
     return _vkApi_call('messages.send', array(
         'peer_id' => $peer_id,
         'message' => $message,
+        'keyboard' => $keyboard,
         'access_token' => VK_API_ACCESS_TOKEN,
         'v' => VK_API_VERSION,
     ));
