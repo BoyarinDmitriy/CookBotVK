@@ -11,12 +11,12 @@ function bot_sendMessage($user_id, $message) {
                     'action' => array(
                         'type' => 'text',
                         'payload' => '{"button": "1"}',
-                        'label' => "Help",
+                        'label' => 'Помощь',
                     ),
                     'color' => 'primary')
         )));
 
-    $keyboard = json_encode($keyboard);
+    $keyboard = json_encode($keyboard,JSON_UNESCAPED_UNICODE);
 
     switch ($message) {
         case 'Начать':
