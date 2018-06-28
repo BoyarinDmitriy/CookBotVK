@@ -3,7 +3,7 @@
 require_once 'vk_api.php';
 require_once 'config.php';
 
-function get_recipe($query) {
+function get_recipe($query, $count_of_recipes) {
     $ingredients = explode(', ', $query);
     if(count($ingredients) > 10){
         return'Слишком много ингридиентов!';
@@ -21,8 +21,8 @@ function get_recipe($query) {
             }
             if($is_complete_coincidence) {
                 $recipe = '';
-                if($recipes_count > 3){
-                    $recipes_count = 3;
+                if($recipes_count > $count_of_recipes){
+                    $recipes_count = $count_of_recipes;
                 }
                 for($i = 0; $i < $recipes_count; $i++) {
                     $recipe = $recipe.POST_ADDRESS.$recipes['items'][$i]['id'].PHP_EOL;
