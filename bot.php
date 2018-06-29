@@ -29,7 +29,7 @@ function bot_sendMessage($user_id, $message) {
                 array(
                     'action' => array(
                         'type' => 'text',
-                        'payload' => '{"button": "1"}',
+                        'payload' => '{"button": "3"}',
                         'label' => 'О создателях',
                     ),
                     'color' => 'negative'
