@@ -24,6 +24,16 @@ function bot_sendMessage($user_id, $message) {
                     ),
                     'color' => 'positive'
                 )
+            ),
+            array(
+                array(
+                    'action' => array(
+                        'type' => 'text',
+                        'payload' => '{"button": "1"}',
+                        'label' => 'О создателях',
+                    ),
+                    'color' => 'negative'
+                )
             )
         )
     );
@@ -39,9 +49,15 @@ function bot_sendMessage($user_id, $message) {
             vkApi_messagesSend($user_id, $start_message, $keyboard);
             break;
         case 'Случайный рецепт':
-            $ingredients = ['огурец', 'помидор', 'морковь', 'лук', 'чкснок', 'молоко', 'мясо', 'масло', 'соль', 'сахар', 'перец'];
+            $ingredients = ['огурец', 'помидор', 'морковь', 'лук', 'чеснок', 'молоко', 'мясо', 'масло', 'соль', 'сахар', 'перец'];
             $random_ingredient = $ingredients[array_rand($ingredients)];
             vkApi_messagesSend($user_id, get_recipe($random_ingredient, 1), $keyboard);
+            break;
+        case 'О создателях':
+            $authors_message = 'Все права принадлежат "Рецепты - вкусняшки на каждый день".'.PHP_EOL.
+                'Бот разработан "IVBOTS | Чат-боты для бизнеса"'.PHP_EOL.
+                'https://vk.com/ivbots';
+            vkApi_messagesSend($user_id, $authors_message, $keyboard);
             break;
         default:
             $recipe = get_recipe($message, 3);
