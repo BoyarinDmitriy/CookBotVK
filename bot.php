@@ -44,7 +44,7 @@ function bot_sendMessage($user_id, $message) {
             vkApi_messagesSend($user_id, get_recipe($random_ingredient, 1), $keyboard);
             break;
         default:
-            $recipe = get_recipe($message);
+            $recipe = get_recipe($message, 3);
             vkApi_messagesSend($user_id, $recipe, $keyboard);
             break;
     }
