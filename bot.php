@@ -4,8 +4,12 @@ require_once 'recipe_generator.php';
 require_once 'vk_api.php';
 require_once  'recipe_generator.php';
 
-function bot_sendWelcomeMessage($user_id) {
-    $welcome_message = 'Привет!';
+function bot_usersGet($user_id) {
+    return vkApi_usersGet($user_id);
+}
+
+function bot_sendWelcomeMessage($user_id, $user_name) {
+    $welcome_message = 'Добро пожаловать, '.$user_name;
     vkApi_messagesSend($user_id, $welcome_message);
 }
 

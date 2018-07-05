@@ -45,7 +45,9 @@ function _callback_handleMessageNew($data) {
 
 function _callback_handleGroupJoin($data) {
     $user_id = $data['user_id'];
-    bot_sendWelcomeMessage($user_id);
+    $user_info = bot_usersGet($user_id);
+    $user_name = $user_info[0]['first_name'];
+    bot_sendWelcomeMessage($user_id, $user_name);
     _callback_okResponse();
 }
 
