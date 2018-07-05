@@ -4,7 +4,12 @@ require_once 'recipe_generator.php';
 require_once 'vk_api.php';
 require_once  'recipe_generator.php';
 
-function bot_sendMessage($user_id, $message) {
+function bot_sendWelcomeMessage($user_id) {
+    $welcome_message = 'Привет!';
+    vkApi_messagesSend($user_id, $welcome_message);
+}
+
+function bot_sendRecipe($user_id, $message) {
     $keyboard = array('one_time' => false,
         'buttons' => array(
             array(

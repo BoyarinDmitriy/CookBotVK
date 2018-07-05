@@ -9,3 +9,4 @@ define('GROUP_DOMAIN', 'sekretwomen');
 define('POST_ADDRESS','https://vk.com/sekretwomen?w=wall-49724592_');
 define('CALLBACK_API_EVENT_CONFIRMATION', 'confirmation');
 define('CALLBACK_API_EVENT_MESSAGE_NEW', 'message_new');
+define('CALLBACK_API_EVENT_GROUP_JOIN', 'group_join');

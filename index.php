@@ -18,6 +18,9 @@ function callback_handleEvent() {
         case CALLBACK_API_EVENT_MESSAGE_NEW:
             _callback_handleMessageNew($event['object']);
             break;
+        case CALLBACK_API_EVENT_GROUP_JOIN:
+            _callback_handleGroupJoin($event['object']);
+            break;
         default:
             _callback_response('Unsupported event');
             break;
@@ -36,7 +39,13 @@ function _callback_handleConfirmation() {
 function _callback_handleMessageNew($data) {
     $user_id = $data['user_id'];
     $message = $data['body'];
-    bot_sendMessage($user_id, $message);
+    bot_sendRecipe($user_id, $message);
+    _callback_okResponse();
+}
+
+function _callback_handleGroupJoin($data) {
+    $user_id = $data['user_id'];
+    bot_sendWelcomeMessage($user_id);
     _callback_okResponse();
 }
 
